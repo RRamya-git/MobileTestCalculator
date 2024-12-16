@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+
+import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,6 +17,11 @@ import io.netty.handler.timeout.TimeoutException;
 import pageObjects.BasePage;
 
 public class Calculation extends BasePage {
+
+	public Calculation(AppiumDriver driver2) {
+		super(driver2);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Given("User is on calculator home screen")
 	public void user_is_on_calculator_home_screen() throws MalformedURLException {

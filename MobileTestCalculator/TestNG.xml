@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cucumber Suite" parallel="tests" thread-count="2">
+    <!-- The suite will run tests in parallel, 2 threads at a time -->
+    
+    <test name="Cucumber Tests">
+        <classes>
+            <!-- Pointing to the TestRunner class -->
+            <class name="runners.TestRunner" />
+        </classes>
+    </test>
+</suite>
